@@ -8,3 +8,11 @@ img {
     width: 500px;
     height: 350px;
 }
+
+[lang="uk"] {
+    font-family: 'Poiret One';
+}
+
+[lang="ru"] {
+    font-family: 'Poiret One';
+}
