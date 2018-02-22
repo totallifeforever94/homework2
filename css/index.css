@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Unica One";
+    color: #ebebeb;
+    background-color: #232323;
+}
+
+
+.about {
+    background-image: url("/img/aboutus-background.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    background-color: #232323;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232323;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 24px;
+}
+
+#events {
+    background-color: #232323;
+}
+
+#events img {
+    height: 500px;
+    width: 350px;
+}
+
+#events li {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+#gallery img {
+    width: 100%;
+}
+
+.about div {
+    text-align: center;
+}
