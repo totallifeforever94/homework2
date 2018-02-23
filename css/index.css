@@ -9,7 +9,7 @@
 
 
 .about {
-    background-image: url("/img/aboutus-background.jpg");
+    background-image: url("/aboutus-background.jpg");
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,14 +18,13 @@
 
 nav {
     background-color: #232323;
+    text-align: center;
 }
 
 .navigation ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: #232323;
-    text-align: center;
 }
 
 .navigation li {
