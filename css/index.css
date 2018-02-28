@@ -2,23 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Unica One";
-    color: #ebebeb;
-    background-color: #232323;
 }
 
-
-.about {
-    background-image: url("../img/aboutus-background.jpg");
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+header {
+    display: grid;
+    grid-template: 50px 1fr/1fr;
+    grid-row-gap: 10px;
+    text-align: center;
+    align-content: center;
+    margin: 10px 0;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #232323;
     text-align: center;
+    font-family: "Unica One";
+}
+
+h1 {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-height: 388.13px;
+}
+
+#gallery img {
+    width: 98.5714286%;
+    margin: 0 10px;
+}
+
+#events img {
+    width: 50%;
+}
+
+#events ul {
+    float: right;
+}
+
+#events article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+#events h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#events {
+    display: grid;
+    grid-template:  40px 1fr 1fr/1fr 1fr;
+    background-color: #232323; 
+}
+
+.music-gallery {
+    display: grid;
+    grid-template: 388.13px / 300px auto;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about {
+    background-image: url("../img/aboutus-background.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .navigation ul {
@@ -29,31 +89,12 @@ nav {
 
 .navigation li {
     display: inline-block;
-    padding: 20px 50px;
+    padding: 20px 30px;
     font-size: 24px;
-}
-
-#events {
-    background-color: #232323;
-}
-
-#events img {
-    height: 500px;
-    width: 350px;
-}
-
-#events li {
-    display: block;
-}
-
-h1 {
-    text-align: center;
-}
-
-#gallery img {
-    width: 100%;
 }
 
 .about div {
     text-align: center;
 }
+
+
