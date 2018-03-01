@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1020px;
+    margin: auto;
+    border: 1px solid #d3d3d3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 header {
     display: grid;
     grid-template: 50px 1fr/1fr;
@@ -16,7 +24,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     background-color: #232323;
     text-align: center;
     font-family: "Unica One";
@@ -100,6 +108,20 @@ small {
     margin-left: 20px;
 }
 
+a:visited {
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+a:link {
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5d55;
+}
+
 #music {
     width: 100%;
 }
@@ -123,17 +145,26 @@ small {
 }
 
 #events img {
-    width: 50%;
+    width: 100%;
 }
 
 #events ul {
-    float: right;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+    font-family: "Unica One";
+    color: #ebebeb;
+    font-size: 30px;
 }
 
 #events article {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    /* justify-content: center; */
+    align-items: center;
     margin: 10px;
 }
 
@@ -152,6 +183,8 @@ small {
 
 #follow a {
     float: right;
+    font-family: "Unica One";
+    
 }
 
 #events {
@@ -181,8 +214,9 @@ small {
 }
 
 .about {
+    display: grid;
+    grid-template: 100px 500px / 1fr;
     background-image: url("../img/aboutus-background.jpg");
-    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -195,6 +229,20 @@ small {
     margin: 10px 0;
 }
 
+.on-hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 50px;
+    background-color: rgba(35,35,35,0.9);
+}
+
+.about p {
+    font-family: "Unica One";
+    font-size: 30px;
+    color: #ebebeb;
+}
+
 .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -203,7 +251,8 @@ small {
 
 .navigation li {
     display: inline-block;
-    padding: 20px 30px;
+    margin-left: 20px;
+    padding-right: 40px;
     font-size: 24px;
 }
 
@@ -217,3 +266,17 @@ small {
     justify-content: flex-start;
 }
 
+section.about:hover div.on-hover {
+    transition: 2.5s; 
+    opacity: 1;
+}
+
+section.about div.on-hover {
+    opacity: 0;
+    transition: 2.5s ease;  
+    opacity: 0.5 \9; 
+    animation:fadeIn ease-in 0.5;
+	animation-fill-mode:forwards;
+    animation-duration:2s;
+    animation-delay: 3.5s;
+}
