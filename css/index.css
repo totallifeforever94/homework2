@@ -183,6 +183,10 @@ a:hover {
     color: #ff5d55;
 }
 
+#events a:visited {
+    color: #ff8a84;
+}
+
 #follow figurecaption {
     float: right;
 }
