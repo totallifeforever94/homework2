@@ -23,12 +23,98 @@ nav {
 }
 
 h1 {
-    text-align: center;
+    font-family: "Unica One";
+    font-size: 48px;
+    color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 iframe {
     width: 100%;
     max-height: 388.13px;
+}
+
+figure {
+    display: block;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 42% 1fr;
+    grid-template-rows: 35px 35px 1fr 35px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-right: 150px;
+}
+
+textarea[name="user-message"] {
+    margin-right: 150px;
+    height: 150px;
+    font-family: "Arial";
+}
+
+input[type="submit"] {
+    grid-column: span 2;
+    width: 153.336667px;
+    display: grid;
+    justify-self: end;
+    background-color: #ff5d55;
+    border-radius: 4px;
+    border-width: 0px;
+    font-family: "Unica One";
+    color: #ebebeb;
+    font-size: 18px;
+    margin-right: 293.333px;
+}
+
+label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-family: "Unica One";
+    color: #ebebeb;
+    margin-right: 150px;
+}
+
+footer {
+    background-color: #232323;
+    font-family: "Unica One";
+    color: #ebebeb;
+    margin: 10px 0;
+    display: grid;
+    grid-template: 40px / 1fr;
+}
+
+small {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+#music {
+    width: 100%;
+}
+
+#contact {
+    display: grid;
+    grid-template: 80px 1fr/ 1fr;
+    background-color: #232323;
+}
+
+#contact h1 {
+    font-size: 36px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 #gallery img {
@@ -56,10 +142,31 @@ iframe {
     grid-column-end: 3;
 }
 
+#follow figurecaption {
+    float: right;
+}
+
+#follow img {
+    max-width: 50%;
+}
+
+#follow a {
+    float: right;
+}
+
 #events {
     display: grid;
-    grid-template:  40px 1fr 1fr/1fr 1fr;
+    grid-template:  60px 1fr 1fr/1fr 1fr;
     background-color: #232323; 
+    margin-bottom: 10px;
+}
+
+#follow {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr ;
+    background-color: #232323; 
+    margin-bottom: 10px;
+    grid-row-gap: 10px;
 }
 
 .music-gallery {
@@ -81,6 +188,13 @@ iframe {
     position: relative;
 }
 
+.links {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-row-gap: 10px;
+    margin: 10px 0;
+}
+
 .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -97,4 +211,9 @@ iframe {
     text-align: center;
 }
 
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
