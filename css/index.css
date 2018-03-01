@@ -146,13 +146,14 @@ a:hover {
 
 #events img {
     width: 100%;
+    box-shadow: 6px 6px;
 }
 
 #events ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-self: self-start;
     justify-content: center;
     margin-left: 10px;
     font-family: "Unica One";
@@ -163,14 +164,23 @@ a:hover {
 #events article {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
-    /* justify-content: center; */
     align-items: center;
     margin: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #events h1 {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+#events a:link {
+    color: #ff8a84;
+}
+
+#events a:hover {
+    color: #ff5d55;
 }
 
 #follow figurecaption {
@@ -275,8 +285,8 @@ section.about div.on-hover {
     opacity: 0;
     transition: 2.5s ease;  
     opacity: 0.5 \9; 
-    animation:fadeIn ease-in 0.5;
-	animation-fill-mode:forwards;
-    animation-duration:2s;
+    animation: fadeIn ease-in 0.5;
+	animation-fill-mode: forwards;
+    animation-duration: 2s;
     animation-delay: 3.5s;
 }
