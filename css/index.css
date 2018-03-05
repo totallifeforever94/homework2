@@ -342,6 +342,10 @@ section.about div.on-hover {
         width: 50%;
     }
     
+    #events {
+        display: block;
+    }
+    
     #contact {
         display: grid;
     }
