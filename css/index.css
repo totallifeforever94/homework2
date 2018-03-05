@@ -193,10 +193,6 @@ a:hover {
     color: #ff8a84;
 }
 
-#follow figurecaption {
-    float: right;
-}
-
 #follow img {
     max-width: 50%;
 }
@@ -308,6 +304,74 @@ section.about div.on-hover {
     
     iframe {
         width: 100%;
-        height: 300px;
+        height: 270px;
+    }
+}
+    
+@media (max-width: 788px) {
+    
+    body {
+        margin: auto;
+    }
+    
+    form {
+        display: block;
+    }
+    
+    label {
+        display: none;
+    }
+    
+    input, textarea {
+        display: flex;
+        width: 80%;
+        align-content: center;
+        margin: auto;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+    
+    textarea[name="user-message"] {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    input[type="submit"]{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    
+    #contact {
+        display: grid;
+    }
+    
+    #follow {
+        display: block;
+    }
+    
+    #follow h1 {
+        font-size: 30px;
+    }
+    
+    #follow .text {
+        display: none
+    }
+    
+    #follow a {
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+        font-family: "Unica One";
+    }
+    
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        margin: auto;
+        display: block;
     }
 }
