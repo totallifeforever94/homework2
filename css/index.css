@@ -255,7 +255,7 @@ a:hover {
 
 .about p {
     font-family: "Unica One";
-    font-size: 36px;
+    font-size: 32px;
     color: #ebebeb;
 }
 
@@ -361,6 +361,11 @@ section.about div.on-hover {
         justify-content: space-around;
     }
     
+    .about a {
+        color: #ff5d55;
+        text-decoration: none;
+    }
+    
     .on-hover {
         display: flex;
         align-items: center;
@@ -435,6 +440,11 @@ section.about div.on-hover {
         justify-content: space-around;
     }
     
+    .about a {
+        color: #ff5d55;
+        text-decoration: none;
+    }
+    
     #follow {
         margin-top: 0;
     }
@@ -446,7 +456,7 @@ section.about div.on-hover {
     
     .about p {
         font-family: "Unica One";
-        font-size: 21px;
+        font-size: 23px;
         color: #ebebeb;
     }
     
