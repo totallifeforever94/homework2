@@ -356,6 +356,21 @@ section.about div.on-hover {
         opacity: 1;
     }
     
+    #events ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        font-family: "Unica One";
+        color: #ebebeb;
+        font-size: 15px;
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
     small {
         margin: auto;
         justify-content: space-around;
@@ -397,7 +412,24 @@ section.about div.on-hover {
     }
     
     #events {
-        display: block;
+        display: grid;
+        grid-template: 70px 1fr / 25% 25% 25% 25%;
+    }
+    
+    #events h1 {
+        grid-column-end: 5;
+        font-size: 30px;
+    }
+    
+    #events img {
+        width: 60%;
+    }
+    
+    #events article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
     }
     
     #events .last {
