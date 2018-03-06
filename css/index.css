@@ -221,7 +221,7 @@ a:hover {
 .music-gallery {
     display: grid;
     grid-template: 1fr / 30% 70%;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .wrapper {
@@ -255,7 +255,7 @@ a:hover {
 
 .about p {
     font-family: "Unica One";
-    font-size: 30px;
+    font-size: 36px;
     color: #ebebeb;
 }
 
@@ -306,12 +306,22 @@ section.about div.on-hover {
         width: 100%;
         height: 270px;
     }
+    
+    #gallery img {
+        width: 100%;
+        margin: auto;
+        margin-top: 9px;
+    }
 }
     
 @media (max-width: 788px) {
-    
+
     body {
         margin: auto;
+        max-width: 788px;
+        border: none;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     
     form {
@@ -342,8 +352,42 @@ section.about div.on-hover {
         width: 50%;
     }
     
+    section.about div.on-hover {
+        opacity: 1;
+    }
+    
+    small {
+        margin: auto;
+        justify-content: space-around;
+    }
+    
+    .on-hover {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 30px 30px;
+        background-color: rgba(35,35,35,0.9)
+    }
+    
+    .about p {
+        font-family: "Unica One";
+        font-size: 26px;
+        color: #ebebeb;
+    }
+    
+    .about h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+    
     #events {
         display: block;
+    }
+    
+    #events .last {
+        margin-bottom: 0;
     }
     
     #contact {
@@ -377,5 +421,36 @@ section.about div.on-hover {
     .wrapper {
         margin: auto;
         display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    iframe {
+        height: 120px;
+    }
+        
+    small {
+        margin: auto;
+        justify-content: space-around;
+    }
+    
+    #follow {
+        margin-top: 0;
+    }
+    
+    #gallery img {
+        margin-bottom: 0;
+        margin-top: 7px;
+    }
+    
+    .about p {
+        font-family: "Unica One";
+        font-size: 21px;
+        color: #ebebeb;
+    }
+    
+    .about h1 {
+        font-size: 38px;
     }
 }
