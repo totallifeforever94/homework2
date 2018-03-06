@@ -249,14 +249,15 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 50px 50px;
+    margin: 0 50px 50px 50px;
     background-color: rgba(35,35,35,0.9);
 }
 
 .about p {
     font-family: "Unica One";
-    font-size: 32px;
+    font-size: 36px;
     color: #ebebeb;
+    padding: 0 20px;
 }
 
 .navigation ul {
@@ -290,7 +291,6 @@ section.about:hover div.on-hover {
 section.about div.on-hover {
     opacity: 0;
     transition: 2.5s ease;  
-    opacity: 0.5 \9; 
     animation: fadeIn ease-in 0.5;
 	animation-fill-mode: forwards;
     animation-duration: 2s;
@@ -361,6 +361,15 @@ section.about div.on-hover {
         justify-content: space-around;
     }
     
+    .about {
+        display: grid;
+        grid-template: 100px 350px / 1fr;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-top: 0;
+    }
+    
     .about a {
         color: #ff5d55;
         text-decoration: none;
@@ -370,7 +379,7 @@ section.about div.on-hover {
         display: flex;
         align-items: center;
         text-align: center;
-        margin: 30px 30px;
+        margin: 0 30px 30px 30px;
         background-color: rgba(35,35,35,0.9)
     }
     
@@ -429,6 +438,12 @@ section.about div.on-hover {
     }
 }
 
+@media (max-width: 570px) {
+    .about p {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 400px) {
     
     iframe {
@@ -438,6 +453,15 @@ section.about div.on-hover {
     small {
         margin: auto;
         justify-content: space-around;
+    }
+    
+    .about {
+        display: grid;
+        grid-template: 70px 350px / 1fr;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-top: 0;
     }
     
     .about a {
@@ -456,11 +480,11 @@ section.about div.on-hover {
     
     .about p {
         font-family: "Unica One";
-        font-size: 23px;
+        font-size: 17px;
         color: #ebebeb;
     }
     
     .about h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
 }
