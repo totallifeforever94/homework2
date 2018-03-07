@@ -72,7 +72,7 @@ input[type="submit"] {
     display: grid;
     justify-self: end;
     background-color: #ff5d55;
-    border-radius: 4px;
+    border-radius: 2px;
     border-width: 0px;
     font-family: "Unica One";
     color: #ebebeb;
@@ -298,6 +298,7 @@ section.about div.on-hover {
 }
 
 @media (max-width: 1030px) {
+    
     .music-gallery {
         display: block;
     }
@@ -316,6 +317,15 @@ section.about div.on-hover {
     
 @media (max-width: 788px) {
 
+    h1 {
+        font-family: "Unica One";
+        font-size: 38px;
+        color: #ebebeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     body {
         margin: auto;
         max-width: 788px;
@@ -350,6 +360,11 @@ section.about div.on-hover {
         margin: auto;
         margin-bottom: 10px;
         width: 50%;
+        border-radius: 2px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #ff5d55;
     }
     
     section.about div.on-hover {
@@ -413,23 +428,22 @@ section.about div.on-hover {
     
     #events {
         display: grid;
-        grid-template: 70px 1fr / 25% 25% 25% 25%;
-    }
-    
-    #events h1 {
-        grid-column-end: 5;
-        font-size: 30px;
+        grid-template: 70px 1fr/25% 25% 25% 25%;
     }
     
     #events img {
         width: 60%;
     }
     
+    #events h1 {
+        grid-column-end: 5;
+    }
+    
     #events article {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 auto;
+        flex-wrap: wrap;
     }
     
     #events .last {
@@ -453,10 +467,13 @@ section.about div.on-hover {
     }
     
     #follow a {
-        margin-bottom: 10px;
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         font-family: "Unica One";
+        width: 150px;
+        margin: auto;
+        margin-bottom: 10px;
     }
     
     .links {
@@ -477,6 +494,15 @@ section.about div.on-hover {
 }
 
 @media (max-width: 400px) {
+    
+    h1 {
+        font-family: "Unica One";
+        font-size: 30px;
+        color: #ebebeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     iframe {
         height: 120px;
