@@ -24,6 +24,8 @@ header {
 nav {
     background-color: #232323;
     font-family: "Unica One";
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -37,7 +39,7 @@ h1 {
 
 iframe {
     max-width: 100%;
-    height: 388.13px;
+    height: 381.94px;
 }
 
 figure {
@@ -217,12 +219,29 @@ a:hover {
 .music-gallery {
     display: grid;
     grid-template: 1fr / 30% 70%;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
-.wrapper {
+.container {
     max-width: 1000px;
     margin: auto;
+}
+
+.navbar {
+    font-size: 24px;
+    color: #ebebeb;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff5d55;
+}
+
+.bg-light {
+    background-color: #232323!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ebebeb;
 }
 
 .about {
@@ -231,7 +250,6 @@ a:hover {
     background-image: url("../img/aboutus-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .links {
@@ -254,12 +272,14 @@ a:hover {
     font-size: 36px;
     color: #ebebeb;
     padding: 0 20px;
+    margin: 0;
 }
 
-.navigation ul {
-    list-style-type: none;
+.navbar ul {
+    color: #ebebeb;
     padding: 0;
     overflow: hidden;
+    margin: 0;
 }
 
 .navigation li {
@@ -320,6 +340,19 @@ section.about div.on-hover {
         margin: auto;
     }
 }
+
+@media (max-width: 991px) {
+    
+    .bg-light {
+    background-color: #fff!important;
+    
+    .navbar {
+        padding: 0;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+    color: #ff5d55;
+    }
     
 @media (max-width: 788px) {
 
@@ -334,7 +367,6 @@ section.about div.on-hover {
     
     body {
         margin: auto;
-        max-width: 788px;
         border: none;
         margin-bottom: 0;
         margin-top: 0;
@@ -430,6 +462,26 @@ section.about div.on-hover {
         justify-content: center;
         align-items: center;
         font-size: 40px;
+        margin: 0;
+    }
+    
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        z-index: 10;
+        background-color: #232323;
+    }
+    
+    .navbar {
+        padding: 0;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+    color: #ff5d55;
+    
+    .bg-light {
+    background-color: #fff!important;
     }
     
     #events {
@@ -548,11 +600,15 @@ section.about div.on-hover {
     
     .about p {
         font-family: "Unica One";
-        font-size: 19px;
+        font-size: 16px;
         color: #ebebeb;
     }
     
     .about h1 {
         font-size: 32px;
+    }
+    
+    * {
+        margin: 0;
     }
 }
