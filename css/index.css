@@ -283,6 +283,18 @@ a:hover {
     justify-content: flex-start;
 }
 
+.carousel-indicators li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
 section.about:hover div.on-hover {
     transition: 2.5s; 
     opacity: 1;
