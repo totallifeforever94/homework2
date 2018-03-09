@@ -24,6 +24,16 @@
     word-wrap: break-word;
 }
 
+.first-slide-ev {
+    display: grid;
+    grid-template: 50% 50%/50% 50%;
+}
+
+.second-slide-ev {
+    display: grid;
+    grid-template: 50% 50%/50% 50%;
+}
+
 body {
     max-width: 1020px;
     margin: auto;
@@ -62,7 +72,7 @@ h1 {
 
 iframe {
     max-width: 100%;
-    height: 393.75px;
+    height: 389.02px;
 }
 
 figure {
@@ -186,7 +196,7 @@ a:hover {
     margin-left: 10px;
     font-family: "Unica One";
     color: #ebebeb;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 0;
 }
 
@@ -228,7 +238,7 @@ a:hover {
 
 #events {
     display: grid;
-    grid-template:  80px 1fr 1fr/1fr 1fr;
+    grid-template:  80px 1fr/1fr;
     background-color: #232323; 
     margin-bottom: 10px;
 }
@@ -340,6 +350,10 @@ a:hover {
     border-radius: 10px;
 }
 
+.carousel-indicators {
+    bottom: 0;
+}
+
 section.about:hover div.on-hover {
     transition: 2.5s; 
     opacity: 1;
@@ -352,6 +366,10 @@ section.about div.on-hover {
 	animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 3.5s;
+}
+
+ol {
+    margin-bottom: 5px;
 }
 
 @media (max-width: 1030px) {
@@ -502,8 +520,20 @@ section.about div.on-hover {
     
     #events {
         display: grid;
-        grid-template: 70px 1fr/25% 25% 25% 25%;
+        grid-template: 70px 1fr/1fr;
     }
+    
+    .first-slide-ev {
+    display: grid;
+    grid-template: 1fr/repeat(4, 25%);
+    height: 310px;
+}
+
+.second-slide-ev {
+    display: grid;
+    grid-template: 1fr/repeat(4, 25%);
+    height: 310px;
+}
     
     #events img {
         width: 80%;
