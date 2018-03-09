@@ -526,13 +526,11 @@ ol {
     .first-slide-ev {
     display: grid;
     grid-template: 1fr/repeat(4, 25%);
-    height: 310px;
 }
 
 .second-slide-ev {
     display: grid;
     grid-template: 1fr/repeat(4, 25%);
-    height: 310px;
 }
     
     #events img {
