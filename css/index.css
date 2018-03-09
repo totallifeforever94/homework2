@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+
+.card {
+    background-color: #232323;
+    text-align: center;
+    justify-content: center;
+    border: transparent;
+    display: flex;
+    flex-direction: row;
+    margin: 25px 20px;
+}
+
+.card-img-top {
+    align-self: center;
+}
+
+.card-body {
+    padding: 2px;
+    word-wrap: break-word;
+}
+
 body {
     max-width: 1020px;
     margin: auto;
@@ -37,6 +57,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 iframe {
@@ -151,8 +172,9 @@ a:hover {
 }
 
 #events img {
-    width: 100%;
+    width: 50%;
     box-shadow: 6px 6px;
+    align-self: flex-start;
 }
 
 #events ul {
@@ -165,6 +187,7 @@ a:hover {
     font-family: "Unica One";
     color: #ebebeb;
     font-size: 30px;
+    margin-left: 0;
 }
 
 #events article {
@@ -205,7 +228,7 @@ a:hover {
 
 #events {
     display: grid;
-    grid-template:  60px 1fr 1fr/1fr 1fr;
+    grid-template:  80px 1fr 1fr/1fr 1fr;
     background-color: #232323; 
     margin-bottom: 10px;
 }
@@ -347,6 +370,12 @@ section.about div.on-hover {
         margin: auto;
     }
 }
+
+@media (max-width: 991px) {
+     section.about div.on-hover {
+        opacity: 1;
+    }
+}
     
 @media (max-width: 788px) {
 
@@ -419,6 +448,18 @@ section.about div.on-hover {
         margin-bottom: 10px;
     }
     
+    .card {
+        background-color: #232323;
+        text-align: center;
+        justify-content: center;
+        border: transparent;
+        display: flex;
+        flex-direction: column;
+        word-wrap: break-word;
+        position: relative;
+        margin: 0;
+    }
+    
     small {
         margin: auto;
         justify-content: space-around;
@@ -465,7 +506,8 @@ section.about div.on-hover {
     }
     
     #events img {
-        width: 60%;
+        width: 80%;
+        align-self: center;
     }
     
     #events h1 {
@@ -477,10 +519,6 @@ section.about div.on-hover {
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-    }
-    
-    #events .last {
-        margin-bottom: 0;
     }
     
     #contact {
@@ -518,11 +556,11 @@ section.about div.on-hover {
 
 @media (max-width: 570px) {
     .about p {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     iframe {
-        height: 150px;
+        height: 130px;
     }
 }
 
