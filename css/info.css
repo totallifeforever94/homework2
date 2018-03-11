@@ -17,6 +17,17 @@ img {
 }
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 1020px;
     margin: auto;
 }
+
+body {
+    body {
+    max-width: 1020px;
+    margin: auto;
+    border: 1px solid #d3d3d3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
