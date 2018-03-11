@@ -318,6 +318,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link {
     color: #ebebeb;
+    padding-right: 24px;
 }
 
 .navbar {
@@ -390,10 +391,36 @@ ol {
 }
 
 @media (max-width: 991px) {
-     section.about div.on-hover {
+    section.about div.on-hover {
         opacity: 1;
     }
-}
+
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+        padding: 0;
+    }
+
+    .bg-light {
+        background-color: #fff!important;
+    }
+    
+    #navbarTogglerDemo02 {
+        z-index: 10;
+        background-color: #232323;
+        margin-top: 20px;
+    }
+    
+    .navbar-light .navbar-toggler {
+        color: #232323;
+        border-color: #fff;
+    }
+
+    #gallery {
+        margin-top: 6px;
+    }
+
+    #events {
+        margin-top: 10px;
+    }
     
 @media (max-width: 788px) {
 
