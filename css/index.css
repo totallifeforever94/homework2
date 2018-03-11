@@ -412,6 +412,7 @@ ol {
     .navbar-light .navbar-toggler {
         color: #232323;
         border-color: #fff;
+        padding: 0;
     }
 
     #gallery {
