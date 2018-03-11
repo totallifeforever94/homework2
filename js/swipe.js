@@ -1,8 +1,8 @@
 $(document).ready(function() {
-   $("#events-car, #events-car-small").swiperight(function() {
+   $("#events-car").swiperight(function() {
       $(this).carousel('prev');
     });
-   $("#events-car, #events-car-small").swipeleft(function() {
+   $("#events-car").swipeleft(function() {
       $(this).carousel('next');
    });
 });
