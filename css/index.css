@@ -122,6 +122,7 @@ textarea[name="user-message"] {
     font-size: 18px;
     margin-right: 293.333px;
     transition-duration: 0.4s;
+    border-color: transparent;
 }
 
 #contact button[type="button"]:hover {
@@ -274,18 +275,18 @@ a:hover {
     width: 100%;
     pointer-events: auto;
     background-clip: padding-box;
-    border: 1px solid #ebebeb;
+    border: 1px solid #7a7a7a;
     border-radius: .3rem;
     outline: 0;
     background-color: #232323;
     color: #ebebeb;
     font-family: "Unica One";
     height: 250px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .modal-header {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #7a7a7a;
 }
 
 .modal-body p {
@@ -308,6 +309,10 @@ a:hover {
 
 .modal .fade {
     max-width: 1020px;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 93, 85, 0.5);
 }
 
 .music-gallery {
@@ -544,6 +549,7 @@ ol {
         margin-bottom: 10px;
         width: 50%;
         border-radius: 2px;
+        border: transparent;
     }
     
     #contact button[type="button"]:hover {
