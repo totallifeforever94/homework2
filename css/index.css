@@ -34,6 +34,10 @@
     grid-template: 50% 50%/50% 50%;
 }
 
+.events-car-small {
+    display: none;
+}
+
 body {
     max-width: 1020px;
     margin: auto;
@@ -226,6 +230,10 @@ a:hover {
     color: #ff8a84;
 }
 
+#events-car-small {
+    display: none;
+}
+
 #follow img {
     max-width: 50%;
 }
@@ -408,7 +416,8 @@ ol {
         background-color: #fff!important;
     }
     
-    #navbarTogglerDemo02 {
+    .collapse.show {
+        display: block;
         z-index: 10;
         background-color: #232323;
         margin-top: 21px;
@@ -564,12 +573,12 @@ ol {
     .first-slide-ev {
     display: grid;
     grid-template: 1fr/repeat(4, 25%);
-}
+    }
 
-.second-slide-ev {
-    display: grid;
-    grid-template: 1fr/repeat(4, 25%);
-}
+    .second-slide-ev {
+        display: grid;
+        grid-template: 1fr/repeat(4, 25%);
+    }
     
     #events img {
         width: 80%;
@@ -632,6 +641,30 @@ ol {
 
 @media (max-width: 400px) {
     
+    #events-car-small {
+        display: block;
+    }
+    
+    .first-slide-ev-sm {
+        display: grid;
+        grid-template: 1fr/50% 50%;
+    }
+    
+    .second-slide-ev-sm {
+        display: grid;
+        grid-template: 1fr/50% 50%;
+    }
+    
+    .third-slide-ev-sm {
+        display: grid;
+        grid-template: 1fr/50% 50%;
+    }
+    
+    .fourth-slide-ev-sm {
+        display: grid;
+        grid-template: 1fr/50% 50%;
+    }
+    
     h1 {
         font-family: "Unica One";
         font-size: 30px;
@@ -675,11 +708,19 @@ ol {
     
     .about p {
         font-family: "Unica One";
-        font-size: 13px;
+        font-size: 14px;
         color: #ebebeb;
     }
     
     .about h1 {
         font-size: 32px;
+    }
+    
+    #events-car {
+        display: none;
+    }
+    
+    #music {
+        margin-bottom: -10px;
     }
 }
