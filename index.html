@@ -431,14 +431,33 @@
                 <label>Your Name:</label><input id="user-name" type="text" placeholder="Jimy Hendrix" name="user-name" required>
                 <label>Your Email:</label><input id="user-emale" type="email" placeholder="jimy@hendrix.com" name="user-email" required>
                 <label>Your Message:</label><textarea id="user-message" type="text" placeholder="Your Message" name="user-message" required></textarea>
-                <input type="submit" value="Send">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Send</button>
             </form>
         </section>
 
         <footer>
             <small>Copyright ©2018. The Substanse. All Rights Reserved.</small>
         </footer>
-    </div>
+        
+        </div>
+        
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for contacting us!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

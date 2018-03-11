@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.btn-secondary {
+    color: #ebebeb;
+    background-color: #ff8a84;
+    border-color: #ff8a84;
+}
+
+.btn-secondary:hover {
+    color: #ebebeb;
+    background-color: #ff5d55;
+    border-color: #ff5d55;
+}
 
 .card {
     background-color: #232323;
@@ -38,7 +49,7 @@
     display: none;
 }
 
-body {
+.container {
     max-width: 1020px;
     margin: auto;
     border: 1px solid #d3d3d3;
@@ -98,7 +109,7 @@ textarea[name="user-message"] {
     font-family: "Arial";
 }
 
-input[type="submit"] {
+#contact button[type="button"] {
     grid-column: span 2;
     width: 153.336667px;
     display: grid;
@@ -113,7 +124,7 @@ input[type="submit"] {
     transition-duration: 0.4s;
 }
 
-input[type="submit"]:hover {
+#contact button[type="button"]:hover {
     background-color: #ff8a84;
     cursor: pointer;
 }
@@ -256,10 +267,47 @@ a:hover {
     grid-row-gap: 10px;
 }
 
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid #ebebeb;
+    border-radius: .3rem;
+    outline: 0;
+    background-color: #232323;
+    color: #ebebeb;
+    font-family: "Unica One";
+    height: 250px;
+    font-size: 30px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.modal-body p {
+    display: flex;
+    justify-content: space-around;
+    color: #ebebeb;
+}
+
+.modal-footer {
+    border: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
 .container {
     max-width: 1020px;
     margin: auto;
     display: block;
+}
+
+.modal .fade {
+    max-width: 1020px;
 }
 
 .music-gallery {
@@ -491,14 +539,14 @@ ol {
         margin-bottom: 10px;
     }
     
-    input[type="submit"]{
+    #contact button[type="button"]{
         margin: auto;
         margin-bottom: 10px;
         width: 50%;
         border-radius: 2px;
     }
     
-    input[type="submit"]:hover {
+    #contact button[type="button"]:hover {
         background-color: #ff5d55;
     }
     
