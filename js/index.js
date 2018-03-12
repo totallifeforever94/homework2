@@ -1,10 +1,10 @@
-$('#submit input[type="submit"]').click(event => {
-    if ($('#submit')[0].checkValidity());
-    event.preventDefault();
+function ajaxFormSubmitClick(e) {
+    if ($('#ajaxForm')[0].checkValidity());
+    e.preventDefault();
     
-    $ajax ({
+    $.ajax ({
         url: "https://tranquil-sierra-86540.herokuapp.com/sava.taras@gmail.com",
-        method: POST,
+        method: 'POST',
         data: {
             'name': $('#name').val(),
             'email': $('#email').val(),
@@ -13,12 +13,10 @@ $('#submit input[type="submit"]').click(event => {
         dataType: 'json'
     })
     .done( () => {
-        
+        // modal appears here, but crashed
+        $("#thank-u").modal();
         $('#name').val('');
         $('#email').val('');
         $('#message').val('');
-            
     });
-});
-
-
+};

@@ -427,11 +427,11 @@
 
         <section id="contact">
             <h1>Contact Us</h1>
-            <form id="ajaxform" method="POST" action="https://tranquil-sierra-86540.herokuapp.com/sava.taras@gmail.com">
+            <form id="ajaxForm" onsubmit="return ajaxFormSubmitClick(event)">
                 <label>Your Name:</label><input id="name" type="text" placeholder="Jimy Hendrix" name="user-name" required>
                 <label>Your Email:</label><input id="email" type="email" placeholder="jimy@hendrix.com" name="user-email" required>
                 <label>Your Message:</label><textarea id="message" type="text" placeholder="Your Message" name="user-message" required></textarea>
-                <button id="submit" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#thank-u">Send</button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </section>
 
