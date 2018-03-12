@@ -13,7 +13,6 @@ function ajaxFormSubmitClick(e) {
         dataType: 'json'
     })
     .done( () => {
-        // modal appears here, but crashed
         $("#thank-u").modal();
         $('#name').val('');
         $('#email').val('');
