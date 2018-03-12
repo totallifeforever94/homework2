@@ -19,5 +19,6 @@ function ajaxFormSubmitClick(e) {
         $('#name').val('');
         $('#email').val('');
         $('#message').val('');
+        $('.modal-backdrop.show').hide();
     });
 }
