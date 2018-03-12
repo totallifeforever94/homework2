@@ -21,5 +21,8 @@ function ajaxFormSubmitClick(e) {
         $('#email').val('');
         $('#message').val('');
         $('.modal-backdrop.show').hide();
+    })
+    .fail( () => {
+        
     });
 }
