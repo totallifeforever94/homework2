@@ -14,6 +14,7 @@ function ajaxFormSubmitClick(e) {
         dataType: 'json'
     })
     .done( () => {
+        $('.modal-backdrop.show').show();
         $('#loader').modal().hide();
         $("#thank-u").modal();
         $('#name').val('');
