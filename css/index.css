@@ -383,6 +383,7 @@ a:hover {
     font-size: 24px;
     color: #ebebeb;
     margin-bottom: 10px;
+    justify-content: flex-end;
 }
 
 .bg-light {
