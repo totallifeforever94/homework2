@@ -1,6 +1,7 @@
 function ajaxFormSubmitClick(e) {
     if ($('#ajaxForm')[0].checkValidity());
     e.preventDefault();
+    $('.modal-backdrop.show').show();
     $('#loader').modal().show();
     
     $.ajax ({
@@ -14,7 +15,6 @@ function ajaxFormSubmitClick(e) {
         dataType: 'json'
     })
     .done( () => {
-        $('.modal-backdrop.show').show();
         $('#loader').modal().hide();
         $("#thank-u").modal();
         $('#name').val('');
