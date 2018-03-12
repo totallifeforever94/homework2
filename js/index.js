@@ -1,6 +1,7 @@
 function ajaxFormSubmitClick(e) {
     if ($('#ajaxForm')[0].checkValidity());
     e.preventDefault();
+    $('#loader').modal().show();
     
     $.ajax ({
         url: "https://tranquil-sierra-86540.herokuapp.com/sava.taras@gmail.com",
@@ -13,6 +14,7 @@ function ajaxFormSubmitClick(e) {
         dataType: 'json'
     })
     .done( () => {
+        $('#loader').modal().hide();
         $("#thank-u").modal();
         $('#name').val('');
         $('#email').val('');
