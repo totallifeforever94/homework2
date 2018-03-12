@@ -109,7 +109,7 @@ textarea[name="user-message"] {
     font-family: "Arial";
 }
 
-#contact button[type="button"] {
+#contact button[type="submit"] {
     grid-column: span 2;
     width: 153.336667px;
     display: grid;
@@ -125,7 +125,7 @@ textarea[name="user-message"] {
     border-color: transparent;
 }
 
-#contact button[type="button"]:hover {
+#contact button[type="submit"]:hover {
     background-color: #ff8a84;
     cursor: pointer;
 }
@@ -544,7 +544,7 @@ ol {
         margin-bottom: 10px;
     }
     
-    #contact button[type="button"]{
+    #contact button[type="submit"]{
         margin: auto;
         margin-bottom: 10px;
         width: 50%;
@@ -552,7 +552,7 @@ ol {
         border: transparent;
     }
     
-    #contact button[type="button"]:hover {
+    #contact button[type="submit"]:hover {
         background-color: #ff5d55;
     }
     
