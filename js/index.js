@@ -18,4 +18,4 @@ function ajaxFormSubmitClick(e) {
         $('#email').val('');
         $('#message').val('');
     });
-};
+}
