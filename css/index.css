@@ -729,6 +729,10 @@ ol {
 
 @media (max-width: 400px) {
     
+    .modal-content {
+        font-size: 22px;
+    }
+    
     #events-car-small {
         display: block;
     }
