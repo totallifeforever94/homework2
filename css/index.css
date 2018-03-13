@@ -4,59 +4,6 @@
     box-sizing: border-box;
 }
 
-.btn-secondary {
-    color: #ebebeb;
-    background-color: #ff8a84;
-    border-color: #ff8a84;
-}
-
-.btn-secondary:hover {
-    color: #ebebeb;
-    background-color: #ff5d55;
-    border-color: #ff5d55;
-}
-
-.card {
-    background-color: #232323;
-    text-align: center;
-    justify-content: center;
-    border: transparent;
-    display: flex;
-    flex-direction: row;
-    margin: 25px 20px;
-}
-
-.card-img-top {
-    align-self: center;
-}
-
-.card-body {
-    padding: 2px;
-    word-wrap: break-word;
-}
-
-.first-slide-ev {
-    display: grid;
-    grid-template: 50% 50%/50% 50%;
-}
-
-.second-slide-ev {
-    display: grid;
-    grid-template: 50% 50%/50% 50%;
-}
-
-.events-car-small {
-    display: none;
-}
-
-.container {
-    max-width: 1020px;
-    margin: auto;
-    border: 1px solid #d3d3d3;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 header {
     text-align: center;
     align-content: center;
@@ -109,27 +56,6 @@ textarea[name="user-message"] {
     font-family: "Arial";
 }
 
-#contact button[type="submit"] {
-    grid-column: span 2;
-    width: 153.336667px;
-    display: grid;
-    justify-self: end;
-    background-color: #ff5d55;
-    border-radius: 2px;
-    border-width: 0px;
-    font-family: "Unica One";
-    color: #ebebeb;
-    font-size: 18px;
-    margin-right: 293.333px;
-    transition-duration: 0.4s;
-    border-color: transparent;
-}
-
-#contact button[type="submit"]:hover {
-    background-color: #ff8a84;
-    cursor: pointer;
-}
-
 label {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -170,6 +96,45 @@ a:link {
 
 a:hover {
     color: #ff5d55;
+}
+
+section.about:hover div.on-hover {
+    transition: 2.5s; 
+    opacity: 1;
+}
+
+section.about div.on-hover {
+    opacity: 0;
+    transition: 2.5s ease;  
+    animation: fadeIn ease-in 0.5;
+	animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+}
+
+ol {
+    margin-bottom: 5px;
+}
+
+#contact button[type="submit"] {
+    grid-column: span 2;
+    width: 153.336667px;
+    display: grid;
+    justify-self: end;
+    background-color: #ff8a84;
+    border-radius: 2px;
+    border-width: 0px;
+    font-family: "Unica One";
+    color: #ebebeb;
+    font-size: 18px;
+    margin-right: 293.333px;
+    transition-duration: 0.4s;
+    border-color: transparent;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #ff5d55;
+    cursor: pointer;
 }
 
 #music {
@@ -268,101 +233,12 @@ a:hover {
     grid-row-gap: 10px;
 }
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #ebebeb;
-
-  margin: 100px auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% { 
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-clip: padding-box;
-    border: 1px solid #7a7a7a;
-    border-radius: .3rem;
-    outline: 0;
-    background-color: #232323;
-    color: #ebebeb;
-    font-family: "Unica One";
-    height: 250px;
-    font-size: 34px;
-}
-
-.modal-header {
-    border-bottom: 1px solid #7a7a7a;
-}
-
-.modal-body {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.modal-body p {
-    color: #ebebeb;
-}
-
-.modal-footer {
-    border: transparent;
-    display: flex;
-    justify-content: space-around;
-}
-
-#loader .modal-content {
-    border: transparent;
-    background-color: transparent;
-}
-
 .container {
     max-width: 1020px;
     margin: auto;
     display: block;
 }
 
-.modal .fade {
-    max-width: 1020px;
-}
-
-.btn-primary.focus, .btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 93, 85, 0.5);
-}
-
-.music-gallery {
-    display: grid;
-    grid-template: 1fr / 30% 70%;
-    margin-bottom: 4px;
-}
-
-.wrapper {
-    max-width: 1000px;
-    margin: auto;
-}
 
 .about {
     display: grid;
@@ -453,30 +329,147 @@ a:hover {
     bottom: 0;
 }
 
-section.about:hover div.on-hover {
-    transition: 2.5s; 
-    opacity: 1;
+.btn-secondary {
+    color: #ebebeb;
+    background-color: #ff8a84;
+    border-color: #ff8a84;
 }
 
-section.about div.on-hover {
-    opacity: 0;
-    transition: 2.5s ease;  
-    animation: fadeIn ease-in 0.5;
-	animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-delay: 3.5s;
+.btn-secondary:hover {
+    color: #ebebeb;
+    background-color: #ff5d55;
+    border-color: #ff5d55;
 }
 
-ol {
-    margin-bottom: 5px;
+.card {
+    background-color: #232323;
+    text-align: center;
+    justify-content: center;
+    border: transparent;
+    display: flex;
+    flex-direction: row;
+    margin: 25px 20px;
+}
+
+.card-img-top {
+    align-self: center;
+}
+
+.card-body {
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+.first-slide-ev {
+    display: grid;
+    grid-template: 50% 50%/50% 50%;
+}
+
+.second-slide-ev {
+    display: grid;
+    grid-template: 50% 50%/50% 50%;
+}
+
+.events-car-small {
+    display: none;
+}
+
+.container {
+    max-width: 1020px;
+    margin: auto;
+    border: 1px solid #d3d3d3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #ff5d55;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid #7a7a7a;
+    border-radius: .3rem;
+    outline: 0;
+    background-color: #232323;
+    color: #ebebeb;
+    font-family: "Unica One";
+    height: 250px;
+    font-size: 34px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-body p {
+    color: #ebebeb;
+}
+
+.modal-footer {
+    border: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+#loader .modal-content {
+    border: transparent;
+    background-color: transparent;
+}
+
+.modal .fade {
+    max-width: 1020px;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 93, 85, 0.5);
+}
+
+.music-gallery {
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+    margin-bottom: 4px;
 }
 
 @media (max-width: 1030px) {
     
-    .music-gallery {
-        display: block;
-    }
-    
+        
     iframe {
         width: 100%;
         height: 180px;
@@ -486,16 +479,31 @@ ol {
         width: 100%;
         margin: auto;
     }
+    
+    .music-gallery {
+        display: block;
+    }
 }
 
 @media (max-width: 991px) {
     
-    .navbar {
-        margin-bottom: 0;
-    }
-    
+        
     section.about div.on-hover {
         opacity: 1;
+    }
+    
+    
+    #gallery {
+        margin-top: 6px;
+    }
+
+    #events {
+        margin-top: 10px;
+    }
+    
+    
+    .navbar {
+        margin-bottom: 0;
     }
 
     .navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -530,14 +538,6 @@ ol {
         padding: 0;
     }
 
-    #gallery {
-        margin-top: 6px;
-    }
-
-    #events {
-        margin-top: 10px;
-    }
-    
 @media (max-width: 791px) {
 
     header {
@@ -583,104 +583,15 @@ ol {
         margin-bottom: 10px;
     }
     
-    #contact button[type="submit"]{
-        margin: auto;
-        margin-bottom: 10px;
-        width: 50%;
-        border-radius: 2px;
-        border: transparent;
-    }
-    
-    #contact button[type="submit"]:hover {
-        background-color: #ff5d55;
-    }
-    
     section.about div.on-hover {
         opacity: 1;
     }
-    
-    #events ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-content: center;
-        align-items: center;
-        font-family: "Unica One";
-        color: #ebebeb;
-        font-size: 10px;
-        width: 100%;
-        padding-top: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .card {
-        background-color: #232323;
-        text-align: center;
-        justify-content: center;
-        border: transparent;
-        display: flex;
-        flex-direction: column;
-        word-wrap: break-word;
-        position: relative;
-        margin: 0;
-    }
-    
+        
     small {
         margin: auto;
         justify-content: space-around;
     }
-    
-    .about {
-        display: grid;
-        grid-template: 100px 350px / 1fr;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        margin-top: 0;
-    }
-    
-    .about a {
-        color: #ff5d55;
-        text-decoration: none;
-    }
-    
-    .on-hover {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: 0 30px 30px 30px;
-        background-color: rgba(35,35,35,0.9)
-    }
-    
-    .about p {
-        font-family: "Unica One";
-        font-size: 23px;
-        color: #ebebeb;
-    }
-    
-    .about h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-    }
-    
-    #events {
-        display: grid;
-        grid-template: 70px 1fr/1fr;
-    }
-    
-    .first-slide-ev {
-    display: grid;
-    grid-template: 1fr/repeat(4, 25%);
-    }
-
-    .second-slide-ev {
-        display: grid;
-        grid-template: 1fr/repeat(4, 25%);
-    }
-    
+        
     #events img {
         width: 80%;
         align-self: center;
@@ -722,6 +633,92 @@ ol {
         margin: auto;
         margin-bottom: 10px;
     }
+
+    #contact button[type="submit"]{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 50%;
+        border-radius: 2px;
+        border: transparent;
+        background-color: #ff5d55; 
+    }
+        
+    #events {
+        display: grid;
+        grid-template: 70px 1fr/1fr;
+    }
+
+    #events ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        font-family: "Unica One";
+        color: #ebebeb;
+        font-size: 10px;
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .card {
+        background-color: #232323;
+        text-align: center;
+        justify-content: center;
+        border: transparent;
+        display: flex;
+        flex-direction: column;
+        word-wrap: break-word;
+        position: relative;
+        margin: 0;
+    }
+
+    .about {
+        display: grid;
+        grid-template: 100px 350px / 1fr;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-top: 0;
+    }
+    
+    .about a {
+        color: #ff5d55;
+        text-decoration: none;
+    }
+    
+    .on-hover {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0 30px 30px 30px;
+        background-color: rgba(35,35,35,0.9)
+    }
+    
+    .about p {
+        font-family: "Unica One";
+        font-size: 23px;
+        color: #ebebeb;
+    }
+    
+    .about h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+    
+    .first-slide-ev {
+    display: grid;
+    grid-template: 1fr/repeat(4, 25%);
+    }
+
+    .second-slide-ev {
+        display: grid;
+        grid-template: 1fr/repeat(4, 25%);
+    }
     
     .links {
         display: flex;
@@ -741,15 +738,46 @@ ol {
 }
 
 @media (max-width: 400px) {
+        
+    h1 {
+        font-family: "Unica One";
+        font-size: 30px;
+        color: #ebebeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    iframe {
+        height: 120px;
+    }
+        
+    small {
+        margin: auto;
+        justify-content: space-around;
+    }
+       
+    #gallery img {
+        margin-bottom: 0;
+        margin-top: 7px;
+    }
+
+    #events-car-small {
+        display: block;
+    }
+        
+    #events-car {
+        display: none;
+    }
+    
+    #music {
+        margin-bottom: -10px;
+    }
     
     .modal-content {
         font-size: 22px;
     }
-    
-    #events-car-small {
-        display: block;
-    }
-    
+ 
     .first-slide-ev-sm {
         display: grid;
         grid-template: 1fr/50% 50%;
@@ -770,24 +798,6 @@ ol {
         grid-template: 1fr/50% 50%;
     }
     
-    h1 {
-        font-family: "Unica One";
-        font-size: 30px;
-        color: #ebebeb;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    iframe {
-        height: 120px;
-    }
-        
-    small {
-        margin: auto;
-        justify-content: space-around;
-    }
-    
     .about {
         display: grid;
         grid-template: 70px 350px / 1fr;
@@ -806,11 +816,6 @@ ol {
         margin-top: 0;
     }
     
-    #gallery img {
-        margin-bottom: 0;
-        margin-top: 7px;
-    }
-    
     .about p {
         font-family: "Unica One";
         font-size: 14px;
@@ -819,13 +824,5 @@ ol {
     
     .about h1 {
         font-size: 32px;
-    }
-    
-    #events-car {
-        display: none;
-    }
-    
-    #music {
-        margin-bottom: -10px;
     }
 }
