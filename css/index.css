@@ -1,4 +1,4 @@
-header, footer, .about, .music-gallery, #events, #follow, #contact {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
